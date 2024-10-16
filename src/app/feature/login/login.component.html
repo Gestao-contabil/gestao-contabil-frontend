@@ -1,0 +1,25 @@
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-fields">
+            <div class="login-field">
+                <label for="email">Email</label>
+                <input
+                        pInputText
+                        id="email"
+                />
+            </div>
+            <div class="login-field">
+                <label for="password">Senha</label>
+                <p-password
+                        [toggleMask]="true"
+                        [feedback]="false"
+                        id="password"
+                />
+            </div>
+        </div>
+        <div class="login-buttons">
+            <p-button label="Login" severity="primary" icon="pi pi-sign-in"></p-button>
+        </div>
+    </div>
+</body>
+
