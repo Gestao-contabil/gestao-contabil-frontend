@@ -1,0 +1,33 @@
+<p-sidebar class="user-sidebar" [(visible)]="userSidebarVisible">
+    <ng-template pTemplate="header">
+
+    </ng-template>
+
+    <ng-template pTemplate="content">
+        <p-button [text]="true" class="sidebar-button" label="Sair" (onClick)="logout()">
+            <i class="pi pi-power-off sidebar-icon"></i>
+        </p-button>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+    </ng-template>
+</p-sidebar>
+
+<p-toolbar class="side-menu">
+    <ng-template pTemplate="start">
+        <p-button [text]="true" class="menu-button">
+            <i class="pi pi-home menu-icon"></i>
+        </p-button>
+        <p-button [text]="true" (onClick)="userSidebarVisible = true" class="menu-button">
+            <i class="pi pi-user menu-icon"></i>
+        </p-button>
+    </ng-template>
+
+    <ng-template pTemplate="center">
+
+    </ng-template>
+
+    <ng-template pTemplate="end">
+
+    </ng-template>
+</p-toolbar>

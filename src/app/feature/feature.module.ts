@@ -7,6 +7,10 @@ import {PrimeTemplate} from "primeng/api";
 import {ButtonModule} from "primeng/button";
 import {InputTextModule} from "primeng/inputtext";
 import {PasswordModule} from "primeng/password";
+import {HomeComponent} from "./home/home.component";
+import {MenuComponent} from "./menu/menu.component";
+import {SidebarModule} from "primeng/sidebar";
+import {ToolbarModule} from "primeng/toolbar";
 
 @NgModule({
     imports: [
@@ -17,9 +21,17 @@ import {PasswordModule} from "primeng/password";
         PrimeTemplate,
         ButtonModule,
         InputTextModule,
-        PasswordModule
+        PasswordModule,
+        SidebarModule,
+        ToolbarModule,
     ],
     declarations: [
+        LoginComponent,
+        HomeComponent,
+        MenuComponent
+    ],
+    exports: [
+        MenuComponent,
         LoginComponent
     ],
     providers: [
