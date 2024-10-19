@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 })
 export class MenuComponent {
 
-  constructor(private authService: AuthService, private router: Router) {
+  constructor(private authService: AuthService, protected router: Router) {
   }
 
   public userSidebarVisible: boolean = false;
@@ -19,4 +19,5 @@ export class MenuComponent {
     this.router.navigate(['/login']);
   }
 
+  protected readonly console = console;
 }

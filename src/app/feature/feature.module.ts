@@ -1,5 +1,5 @@
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {NgModule} from "@angular/core";
 import {LoginComponent} from "./login/login.component";
 import {CoreModule} from "../core/core.module";
@@ -11,6 +11,7 @@ import {HomeComponent} from "./home/home.component";
 import {MenuComponent} from "./menu/menu.component";
 import {SidebarModule} from "primeng/sidebar";
 import {ToolbarModule} from "primeng/toolbar";
+import {TooltipModule} from "primeng/tooltip";
 
 @NgModule({
     imports: [
@@ -24,6 +25,8 @@ import {ToolbarModule} from "primeng/toolbar";
         PasswordModule,
         SidebarModule,
         ToolbarModule,
+        NgOptimizedImage,
+        TooltipModule,
     ],
     declarations: [
         LoginComponent,
