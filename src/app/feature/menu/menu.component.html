@@ -1,6 +1,6 @@
-<p-sidebar class="user-sidebar" [(visible)]="userSidebarVisible">
+<p-sidebar class="user-sidebar" [(visible)]="userSidebarVisible" showCloseIcon="true">
     <ng-template pTemplate="header">
-
+        <img priority ngSrc="assets/CountSync%20Banner.png" alt="banner" height="170" width="318"/>
     </ng-template>
 
     <ng-template pTemplate="content">
@@ -15,10 +15,14 @@
 
 <p-toolbar class="side-menu">
     <ng-template pTemplate="start">
+        <a class="logo-link" (click)="router.navigate(['/home'])">
+            <img priority ngSrc="assets/CountSync.png" alt="logo" height="64" width="66"/>
+        </a>
+
         <p-button [text]="true" class="menu-button">
             <i class="pi pi-home menu-icon"></i>
         </p-button>
-        <p-button [text]="true" (onClick)="userSidebarVisible = true" class="menu-button">
+        <p-button pTooltip="Usuário" tooltipPosition="right" [text]="true" (onClick)="userSidebarVisible = true" class="menu-button">
             <i class="pi pi-user menu-icon"></i>
         </p-button>
     </ng-template>

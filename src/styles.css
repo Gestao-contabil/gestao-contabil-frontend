@@ -6,3 +6,24 @@ body, html{
     margin: 0;
     background: linear-gradient(0deg, #031c32, 	#004d8b);
 }
+
+.p-tooltip-text {
+    background-color: #1f2937;
+}
+
+.p-tooltip.p-tooltip-right .p-tooltip-arrow {
+    border-right-color: #1f2937;
+}
+
+.p-sidebar-header {
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #12229d;
+}
+
+.p-sidebar-content {
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
